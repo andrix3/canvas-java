@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   <children>
+      <Canvas fx:id="canvas" height="154.0" layoutX="14.0" layoutY="59.0" width="513.0" />
+      <RadioButton fx:id="seno" layoutX="43.0" layoutY="24.0" mnemonicParsing="false" onAction="#setSeno" text="Seno">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="coseno" layoutX="121.0" layoutY="24.0" mnemonicParsing="false" onAction="#setCoseno" text="Coseno" toggleGroup="$group" />
+      <Slider fx:id="slider" layoutX="223.0" layoutY="26.0" />
+   </children>
+</AnchorPane>
